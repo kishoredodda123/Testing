@@ -2,25 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SoundWave</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
+      width: 100%;
       overflow: hidden;
     }
+
     iframe {
       border: none;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-<!-- Fullscreen iframe to your app -->
-<iframe src="https://sound-wave-music.lovable.app/" ></iframe>
+  <!-- Fullscreen iframe to your app -->
+  <iframe 
+    src="https://sound-wave-music.lovable.app/" 
+    allowfullscreen 
+    loading="lazy"
+    sandbox="allow-same-origin allow-scripts allow-popups allow-forms">
+  </iframe>
 
 </body>
 </html>
